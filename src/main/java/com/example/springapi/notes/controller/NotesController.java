@@ -7,6 +7,7 @@ import com.example.springapi.notes.services.NotesService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -51,7 +52,9 @@ public class NotesController {
     }
 
     @PostMapping("/removebytitle")
-    Boolean removeNote(@RequestBody String title) throws Exception {
+    Boolean removeNote(@RequestBody Map<String, String> body) throws Exception {
+        String title = body.get("title");
+        System.out.println(title);
         Optional<Note> removed = this.notesHandler.removeNotebyTitle(title);
         this.notesHandler.save();
         return removed.isPresent();

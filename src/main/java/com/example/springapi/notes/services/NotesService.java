@@ -98,8 +98,9 @@ public class NotesService {
 
     //get by title
     public Optional<Note> getNoteByTitle(String title) {
+        System.out.println(title);
         return savedNotes.stream()
-                .filter(g -> g.title().equals(title))
+                .filter(n -> n.title().equals(title))
                 .findFirst();
     }
 
@@ -168,6 +169,7 @@ public class NotesService {
 
     public Optional<Note> removeNotebyTitle(String title) {
         Optional<Note> note = getNoteByTitle(title);
+        System.out.println(note);
         note.ifPresent(value -> this.removeNotebyID(value.id()));
         return note;
     }
