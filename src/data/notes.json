@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "First Note",
+    "content": "This is the first note",
+    "category": "general",
+    "createdAt": "2026-04-17T10:00:00",
+    "updatedAt": "2026-04-17T10:00:00"
+  },
+  {
+    "id": 2,
+    "title": "Second Note",
+    "content": "This is another note",
+    "category": "work",
+    "createdAt": "2026-04-17T11:00:00",
+    "updatedAt": "2026-04-17T11:00:00"
+  },
+  {
+    "id": 3,
+    "title": "Third Note",
+    "content": "This is another work note",
+    "category": "work",
+    "createdAt": "2026-04-17T11:00:00",
+    "updatedAt": "2026-04-17T11:00:00"
+  },
+  {
+    "id": 4,
+    "title": "Fourth Note",
+    "content": "Fourth Note Data",
+    "category": "Test",
+    "createdAt": "2026-05-01",
+    "updatedAt": "2026-05-01"
+  }
+]
